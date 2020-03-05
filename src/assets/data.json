@@ -1,0 +1,20 @@
+{
+    "ProductDetails":[
+        {
+          "name": "Shoes",
+          "price": "2000",
+          "image": "assets/shoes.jpg"
+        },
+        {
+            "name": "Bag",
+            "price": "1500",
+            "image": "assets/bag.jpg"
+        },
+        {
+            "name": "Watch",
+            "price": "3000",
+            "image": "assets/watch.jpg"
+        }
+    ]
+}
+   

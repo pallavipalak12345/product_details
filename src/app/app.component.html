@@ -1,0 +1,23 @@
+
+
+
+
+<!-- Highlight Card -->
+<p> Currency: </p>
+<select (change)="changeCurrency($event)">
+<option  *ngFor="let curr of currencies" value={{curr.value}}>{{curr.title}}
+ </option>
+</select>
+
+<div class="row">
+  <div class="card">
+    <h1 class="card-title">Product Details</h1>
+    <div class="list-group" *ngFor="let product of productDetails" style="display: inline-block; text-align: center;width: 25%;
+    margin: 30px; padding: 20px; background: lightgray;">
+      <img [hidden]="imageLoader" src="{{product.image}}" class="img-responsive" style="width: 100%; height: 250px; display: block;" (load)="this.imageLoader = false;" />
+      <h2 class="list-group-item list-group-item-action" style="display: block;">{{product.name}}</h2>
+      <span class="list-group-item list-group-item-action" >{{product.price}}</span>
+    </div>
+  </div>
+</div>
+
